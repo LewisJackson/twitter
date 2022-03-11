@@ -12,7 +12,6 @@ function Dash() {
     var isloggedIn = useSelector((state) => state.regi.isloggedIn);
 
     return !isloggedIn ? (
-
         <Redirect to={"/"} push />
     ) : (
         <div className={Styles.dash}>
