@@ -11,7 +11,7 @@ export const registering = (payload) => dispatch => {
         dispatch(registersuccess(res.data.user))
     }).catch((err) => {
         console.log(err)
-        alert("User already registerd or data is not correct")
+        alert("User already registered or data is not correct")
     })
 }
 
