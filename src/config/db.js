@@ -1,8 +1,8 @@
 const mongoose = require("mongoose")
-const DB = "mongodb://localhost/twitter123"
+const MONGODB_URI = "mongodb+srv://lewisjackson398:Testing123@twitter-clone.it9rw.mongodb.net/test"
 
 const connect = () => {
-    return mongoose.connect(DB, {
+    return mongoose.connect(MONGODB_URI, {
         useNewUrlParser: true,
         useCreateIndex: true,
         useUnifiedTopology: true,
